@@ -1,0 +1,37 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 100vh;
+	background-color: #f3f3f3;
+	display: flex;
+}
+.memo-game {
+	width: 640px;
+	height: 480px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card {
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	position: relative;
+	margin: 5px;
+	transform: scale(1);
+	transition: transform .2s;
+}
+.card:active {
+	transform: scale(.95);
+	transition: transform .2s;
+}
+.front,
+.back {
+	padding: 20px;
+	width: calc(100% - 40px);
+	height: calc(100%- 40px);
+	position: absolute;
+	background-color: #e6e6e6;
+	border-radius: 10px;
+}
